@@ -68,6 +68,10 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
+  .h_sides>:first-child{
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
 .text1{
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -108,4 +112,77 @@
 .customer>:first-child{
     font-weight: 800;
     font-size: 2.5rem;
+}
+
+@media screen and(max-width: 856px) {
+    .text1, .text2>span:nth-of-type(2) {
+        font-size: 0.9rem;
+        text-align: justify;
+        }
+}
+@media  screen and(max-width:856px) {
+    .text2>span:nth-of-type(1),
+.traffic>span:nth-child(1),
+.customer> span:nth-child(1) 
+{
+ font-size: 1.5rem;
+ text-align: left;
+}
+}
+@media  screen and(max-width:856px){
+    .blueCircle{
+        position: absolute;
+        width: 70%;
+        height: 100%;
+    }
+} 
+@media  screen and(max-width:856px){
+    .wrapper>img{
+        width: 70%;
+        height: 100%;
+    }
+}
+
+@media  screen and(max-width:856px){
+.container{ grid-template-areas: 
+    'left center center' 
+    'right right right';
+}
+}
+
+   
+@media  screen and(max-width:856px){
+    .container>:first-child{
+        grid-area: left;
+        grid-template-rows: none;
+        gap: 8rem;
+    }
+}
+
+@media  screen and(max-width:856px){
+    .container>:nth-child(2){
+    grid-area: right;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0rem;
+
+}
+}
+@media screen and (max-width:640px) {
+    .blueCircle{
+        top: 0rem;
+        width: 16rem;
+        height: 72%;
+    }
+    .wrapper>img{
+        top: 3rem;
+        width: 12rem;
+        height: 15rem;
+    }
+
+    .cart2{
+        transform: scale(0.7);
+        right: -2rem;
+        bottom: 0rem;
+    }
 }

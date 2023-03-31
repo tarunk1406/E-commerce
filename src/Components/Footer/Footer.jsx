@@ -2,13 +2,13 @@ import React from "react";
 import css from "./Footer.module.css";
 import Logo from "../../assets/logo.png";
 import {
-  InboxIcon,
   PhoneIcon,
   LocationMarkerIcon,
   LoginIcon,
   UsersIcon,
   LinkIcon,
-} from "@heroicons/react/outline";
+  InboxInIcon,
+} from "@heroicons/react/solid";
 const Footer = () => {
   return (
     <div className={css.cFooterWrapper}>
@@ -24,40 +24,55 @@ const Footer = () => {
             <span>Contact Us</span>
             <span className={css.pngLine}>
               <LocationMarkerIcon className={css.icon} />
-              <span>97,Radhaswami Nagar, 452001 India</span>
+              <span>california</span>
             </span>
             <span className={css.pngLine}>
-              {" "}
-              <PhoneIcon className={css.icon} />
-              <a href="tel:00000000">00000000</a>
+              <PhoneIcon className={css.icon}></PhoneIcon>
+              <a href="tel:000000000">00000000</a>
             </span>
-
             <span className={css.pngLine}>
-              <InboxIcon className={css.icon} />
-              <a href="mailto:support789@gmail.com">support789@gmail.com</a>
+             <InboxInIcon className={css.icon} ></InboxInIcon>
+              <a href="amazon@gmail.com">a@gmail.com</a>
             </span>
           </div>
         </div>
 
         <div className={css.block}>
           <div className={css.detail}>
-            <span>Contact Us</span>
+            <span>Account</span>
             <span className={css.pngLine}>
-              <LocationMarkerIcon className={css.icon} />
-              <span>97,Radhaswami Nagar, 452001 India</span>
+              <LoginIcon className={css.icon} />
+              <span>Sign-In</span>
             </span>
           </div>
         </div>
 
         <div className={css.block}>
           <div className={css.detail}>
-            <span>Contact Us</span>
+            <span>Company</span>
             <span className={css.pngLine}>
-              <LocationMarkerIcon className={css.icon} />
-              <span>97,Radhaswami Nagar, 452001 India</span>
+              <LinkIcon className={css.icon} />
+              <a href="/about">
+                {" "}
+                <p>About us</p>
+              </a>
             </span>
           </div>
         </div>
+
+        <div className={css.block}>
+          <div className={css.detail}>
+            <span>Resources</span>
+            <span className={css.pngLine}>
+              <UsersIcon className={css.icon} />
+              <p>Safety Privacy & Terms</p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div className={css.copyRight}>
+        <span>Copyright ©2023 by Amazon</span>
+        <span>All rights reserved.</span>
       </div>
     </div>
   );
